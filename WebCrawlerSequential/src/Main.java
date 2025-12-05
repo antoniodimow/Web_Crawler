@@ -1,7 +1,8 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
 
-    System.out.println("Hello World");
-
+public class Main {
+    public static void main(String[] args) throws Exception {
+        PageFetcher fetcher = new PageFetcher();
+        String html = fetcher.fetch("https://www.famnit.upr.si/en/");
+        System.out.println(html);
+    }
 }
